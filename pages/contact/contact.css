@@ -1,0 +1,33 @@
+ion-content{
+  background:  linear-gradient(to right, #2193b0, #6dd5ed);
+}
+p{
+color: #ffffff;
+}
+ion-card{
+  background:linear-gradient(to right, #2193b0, #6dd5ed)
+}
+ion-card-title{
+  color: #ffffff;
+  font-family:roxboroughCF
+}
+button{
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color:#ffffff;
+  font-family:roxboroughCF
+}
+ion-item{
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color:#ffffff;
+  font-family:roxboroughCF
+}
+ion-input{
+  color:#ffffff;
+  font-family:roxboroughCF
+}
+ion-label{
+  color:#ffffff;
+}
+h2{
+  color:#ffffff;
+}
