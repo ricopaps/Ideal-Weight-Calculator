@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Calculator</ion-title>
+  </ion-navbar>
+</ion-header>
+
+ 
+<ion-content padding>
+<ion-card>
+  <ion-card-content>
+    <ion-card-title text-center>
+      Hello! Find your Ideal Weight here.
+      </ion-card-title>
+      <p text-center>
+        Input your Height in feet and inches format and press the calculate button of your gender.
+        </p>
+        </ion-card-content>
+        </ion-card>
+<ion-card>
+  <ion-card-content>
+    <ion-card-title text-center>
+  <h2>Ideal Weight Calculator</h2>
+  </ion-card-title>
+<p>Height in: </p>
+  <ion-item>
+    <ion-label>Feet</ion-label>
+    <ion-input type="number" [(ngModel)]="feet"></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>Inch</ion-label>
+    <ion-input type="number" [(ngModel)]="inch"></ion-input>
+  </ion-item>
+  
+  <button ion-button block fill="solid" (click)="calculateM()">CALCULATE MALE</button>
+  <button ion-button block fil="solid" (click)="calculateF()">CALCULATE FEMALE</button>
+ 
+  <ion-item *ngIf="weight1">
+  <h2>Miller (1983) : {{weight1}} kg.</h2>
+  </ion-item>
+   <ion-item *ngIf="weight2">
+  <h2> Robinson (1983) : {{weight2}} kg.</h2>
+  </ion-item>
+   <ion-item *ngIf="weight3">
+  <h2>Devine (1974) : {{weight3}} kg. </h2>
+  </ion-item>
+   <ion-item *ngIf="weight4">
+  <h2>Hamwi (1964) : {{weight4}} kg.</h2>
+  </ion-item>
+ </ion-card-content>
+        </ion-card>
+</ion-content>
